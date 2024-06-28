@@ -30,6 +30,7 @@ const App = () => {
         accuracyPercentage={calculateAccuracyPercentage(errors, totalTyped)}
         total={totalTyped}
       />
+      <Closing/>
     </>
   );
 };
@@ -47,6 +48,20 @@ const Logo = () => {
 const WordsContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative text-3xl max-w-xl leading-relaxed mx-auto">{children}</div>
+  );
+};
+
+const Closing = () => {
+  return (
+    <div className="text-center mt-10">
+      {" "}
+      <a
+        href="https://github.com/erdemonal11/typeBlitz"
+        className="mt-5 mb-5 text-1xl text-primary-500"
+      >
+        Click to see the Github repo
+      </a>
+    </div>
   );
 };
 

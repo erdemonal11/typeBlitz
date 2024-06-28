@@ -15,6 +15,8 @@ export const countErrors = (actual: string, expected: string) => {
 };
 
 export const calculateAccuracyPercentage = (errors: number, total: number) => {
+  console.log(total)
+  console.log(errors)
   if (total > 0) {
     const corrects = total - errors;
     return (corrects / total) * 100;
